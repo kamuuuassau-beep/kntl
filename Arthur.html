@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Store - Neon Links</title>
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-blue: #00f2ff;
+            --neon-purple: #9d00ff;
+            --bg-dark: #050505;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif; /* Font gaya gaming/modern */
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 50% 50%, #1a0033 0%, transparent 70%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Header Nama Store */
+        .header-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-title h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px var(--neon-blue),
+                0 0 42px var(--neon-blue),
+                0 0 82px var(--neon-blue);
+            animation: pulsate 1.5s infinite alternate;
+        }
+
+        @keyframes pulsate {
+            100% {
+                text-shadow: 
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px var(--neon-blue),
+                    0 0 40px var(--neon-blue),
+                    0 0 80px var(--neon-blue);
+            }
+            0% {
+                text-shadow: 
+                    0 0 2px #fff,
+                    0 0 4px #fff,
+                    0 0 10px var(--neon-blue),
+                    0 0 20px var(--neon-blue);
+            }
+        }
+
+        /* Container Tombol */
+        .links-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Tombol Modern Neon */
+        .neon-btn {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            background: transparent;
+            border: 2px solid var(--neon-purple);
+            box-shadow: 0 0 10px var(--neon-purple), inset 0 0 5px var(--neon-purple);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .neon-btn:hover {
+            background: var(--neon-purple);
+            color: #fff;
+            box-shadow: 0 0 40px var(--neon-purple);
+            transform: scale(1.05);
+        }
+
+        /* Warna khusus untuk variasi */
+        .btn-1 { border-color: var(--neon-blue); box-shadow: 0 0 10px var(--neon-blue), inset 0 0 5px var(--neon-blue); }
+        .btn-1:hover { background: var(--neon-blue); box-shadow: 0 0 40px var(--neon-blue); }
+
+        .btn-2 { border-color: var(--neon-pink); box-shadow: 0 0 10px var(--neon-pink), inset 0 0 5px var(--neon-pink); }
+        .btn-2:hover { background: var(--neon-pink); box-shadow: 0 0 40px var(--neon-pink); }
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
+            font-size: 10px;
+            color: #444;
+            letter-spacing: 3px;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-title">
+        <h1>ARTHUR STORE</h1>
+    </div>
+
+    <div class="links-container">
+        <button class="neon-btn btn-1" onclick="window.open('https://wa.me/6283121601018?text=Halo%20Admin%20Arthur%20Store', '_blank')">
+            ⚡ NO ADMIN
+        </button>
+
+        <button class="neon-btn btn-2" onclick="window.open('https://whatsapp.com/channel/0029VbC8lDRLo4hXOqGVoc0W', '_blank')">
+            📈 SALURAN TESTI
+        </button>
+
+        <button class="neon-btn" onclick="window.open('https://chat.whatsapp.com/BI1TAUrQj4y43yIUCmKcuk?mode=gi_t', '_blank')">
+            ⚔️ GRUP ADMIN
+        </button>
+
+        <button class="neon-btn" onclick="window.open('https://chat.whatsapp.com/KfvLfoVipEIHk3MBYfHxU8?mode=gi_t', '_blank')">
+            🛡️ GRUP ADMIN KE 2
+        </button>
+    </div>
+
+    <div class="footer">
+        EST. 2024 • AUTHENTIC ACCESS
+    </div>
+
+</body>
+</html>
